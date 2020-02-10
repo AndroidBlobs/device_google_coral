@@ -227,14 +227,20 @@ vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 
 # Audio-Hardware
+vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.msmnile.so
+vendor/lib/hw/audio.r_submix.default.so
+vendor/lib/hw/audio.usb.default.so
 vendor/lib/soundfx/libqcompostprocbundle.so
 vendor/lib/soundfx/libqcomvisualizer.so
 vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libvolumelistener.so
+vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.msmnile.so
+vendor/lib64/hw/audio.r_submix.default.so
+vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
@@ -250,7 +256,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib/libbluetooth_audio_session.so
@@ -259,7 +264,6 @@ vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/libbluetooth_audio_session.so
@@ -742,6 +746,16 @@ vendor/firmware/faceauth_v1.b01
 vendor/firmware/faceauth_v1.b02
 vendor/firmware/faceauth_v1.b03
 vendor/firmware/faceauth_v1.mdt
+vendor/firmware/faceauth_v1_1.b00
+vendor/firmware/faceauth_v1_1.b01
+vendor/firmware/faceauth_v1_1.b02
+vendor/firmware/faceauth_v1_1.b03
+vendor/firmware/faceauth_v1_1.mdt
+vendor/firmware/faceauth_v2.b00
+vendor/firmware/faceauth_v2.b01
+vendor/firmware/faceauth_v2.b02
+vendor/firmware/faceauth_v2.b03
+vendor/firmware/faceauth_v2.mdt
 vendor/firmware/ftm5_fw.ftb
 vendor/firmware/ftm5_fw_c2.ftb
 vendor/firmware/ftm5_fw_f2.ftb
@@ -890,6 +904,8 @@ vendor/lib64/vendor.google.wifi_ext@1.0.so
 vendor/lib64/vendor.google.wireless_charger@1.0.so
 vendor/lib64/vendor.qti.googleext.imsext@1.0.so
 vendor/lib64/vendor.qti.googleext.imsext@2.0.so
+vendor/odm/etc/permissions/sku_G020N/com.google.hardware.pixel.japan.xml
+vendor/odm/etc/permissions/sku_G020Q/com.google.hardware.pixel.japan.xml
 vendor/overlay/SystemUIGoogle__auto_generated_rro_vendor.apk
 vendor/radio/qcril_database/upgrade/5_version_google_feature.sql
 
@@ -965,21 +981,14 @@ vendor/firmware/ipa_fws.mdt
 # Kernel-Modules
 vendor/lib/modules/adsp_loader_dlkm.ko
 vendor/lib/modules/apr_dlkm.ko
-vendor/lib/modules/atomic64_test.ko
-vendor/lib/modules/br_netfilter.ko
 vendor/lib/modules/cs35l36_dlkm.ko
 vendor/lib/modules/ftm5.ko
-vendor/lib/modules/hdmi_dlkm.ko
 vendor/lib/modules/heatmap.ko
-vendor/lib/modules/lcd.ko
 vendor/lib/modules/lkdtm.ko
-vendor/lib/modules/llcc_perfmon.ko
-vendor/lib/modules/locktorture.ko
 vendor/lib/modules/machine_dlkm.ko
 vendor/lib/modules/mbhc_dlkm.ko
 vendor/lib/modules/modules.alias
 vendor/lib/modules/modules.dep
-vendor/lib/modules/msm-geni-ir.ko
 vendor/lib/modules/msm_11ad_proxy.ko
 vendor/lib/modules/native_dlkm.ko
 vendor/lib/modules/pinctrl_wcd_dlkm.ko
@@ -987,12 +996,9 @@ vendor/lib/modules/platform_dlkm.ko
 vendor/lib/modules/q6_dlkm.ko
 vendor/lib/modules/q6_notifier_dlkm.ko
 vendor/lib/modules/q6_pdr_dlkm.ko
-vendor/lib/modules/rcutorture.ko
 vendor/lib/modules/stub_dlkm.ko
 vendor/lib/modules/swr_ctrl_dlkm.ko
 vendor/lib/modules/swr_dlkm.ko
-vendor/lib/modules/test_user_copy.ko
-vendor/lib/modules/torture.ko
 vendor/lib/modules/usf_dlkm.ko
 vendor/lib/modules/videobuf2-memops.ko
 vendor/lib/modules/videobuf2-vmalloc.ko
@@ -1003,7 +1009,6 @@ vendor/lib/modules/wcd_core_dlkm.ko
 vendor/lib/modules/wcd_cpe_dlkm.ko
 vendor/lib/modules/wcd_spi_dlkm.ko
 vendor/lib/modules/wglink_dlkm.ko
-vendor/lib/modules/wil6210.ko
 vendor/lib/modules/wlan.ko
 vendor/lib/modules/wsa881x_dlkm.ko
 
@@ -1338,6 +1343,7 @@ vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql
 vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_singapore_ecc_995.sql
+vendor/radio/qcril_database/upgrade/7_remove_germany_hard_ecc_110.sql
 
 # Radio-IMS
 framework/com.qualcomm.qti.uceservice-V2.0-java.jar
@@ -1532,6 +1538,7 @@ vendor/etc/sensors/config/u2_lsm6dsr.json
 vendor/etc/sensors/config/u2_sx932x_0_proto.json
 vendor/etc/sensors/config/u2_tmd3702v.json
 vendor/etc/sensors/config/u3_lis2mdl.json
+vendor/etc/sensors/config/u3_lis2mdl_proto_evt1_0.json
 vendor/etc/sensors/config/u3_lsm6dsr.json
 vendor/etc/sensors/config/u3_tmd3702v.json
 vendor/etc/sensors/config/u3_touch_gesture.json
@@ -1560,11 +1567,14 @@ vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Thermal
+vendor/bin/hw/android.hardware.thermal@2.0-service.pixel
 vendor/bin/thermal-engine
+vendor/etc/init/android.hardware.thermal@2.0-service.pixel.rc
 vendor/etc/thermal-engine-coral-normal_mode.conf
 vendor/etc/thermal-engine-coral-retail_mode.conf
 vendor/etc/thermal_info_config.json
 vendor/etc/thermal_info_config_jaws.json
+vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.pixel.xml
 
 # Time
 -vendor/app/TimeService/TimeService.apk
@@ -1607,6 +1617,7 @@ vendor/bin/sscrpcd
 vendor/etc/fstab.persist
 
 # Misc
+-vendor/app/adreno_graphics_driver/adreno_graphics_driver.apk
 -vendor/app/CACertService/CACertService.apk
 vendor/app/CACertService/oat/arm64/CACertService.odex
 vendor/app/CACertService/oat/arm64/CACertService.vdex
@@ -1772,6 +1783,7 @@ vendor/lib/libsndmonitor.so
 vendor/lib/libsns_registry_skel.so
 vendor/lib/libspectralsensor.so
 vendor/lib/libstagefright_amrnb_common.so
+vendor/lib/libstagefright_bufferpool@2.0.1.so
 vendor/lib/libstagefright_enc_common.so
 vendor/lib/libstagefright_flacdec.so
 vendor/lib/libstagefright_softomx.so
@@ -1893,6 +1905,7 @@ vendor/lib64/libsi.so
 vendor/lib64/libsndmonitor.so
 vendor/lib64/libsns_registry_skel.so
 vendor/lib64/libspectralsensor.so
+vendor/lib64/libstagefright_bufferpool@2.0.1.so
 vendor/lib64/libstpreprocess.so
 vendor/lib64/libstreset.so
 vendor/lib64/libtextclassifier_hash.so
@@ -1923,7 +1936,3 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so
 vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
-vendor/res/images/charger/animation.txt
-vendor/res/images/charger/battery_fail.png
-vendor/res/images/charger/battery_scale.png
-vendor/res/images/charger/main_font.png
