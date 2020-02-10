@@ -17,7 +17,7 @@ PRODUCT_MODEL := mainline
 PRODUCT_GMS_CLIENTID_BASE := android-google
 TARGET_VENDOR := google
 TARGET_VENDOR_PRODUCT_NAME := coral
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="coral-user 10 QQ1B.191205.011 5974828 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="coral-user 10 QQ1D.200105.002 6079691 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := google/coral/coral:10/QQ1B.191205.011/5974828:user/release-keys
+BUILD_FINGERPRINT := google/coral/coral:10/QQ1D.200105.002/6079691:user/release-keys
