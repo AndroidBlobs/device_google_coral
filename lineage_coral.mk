@@ -17,7 +17,7 @@ PRODUCT_MODEL := Pixel 4 XL
 PRODUCT_GMS_CLIENTID_BASE := android-google
 TARGET_VENDOR := google
 TARGET_VENDOR_PRODUCT_NAME := coral
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="coral-user 10 QQ1B.200205.002 6084387 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="coral-user 10 QQ1C.200205.002 6084391 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := google/coral/coral:10/QQ1B.200205.002/6084387:user/release-keys
+BUILD_FINGERPRINT := google/coral/coral:10/QQ1C.200205.002/6084391:user/release-keys
