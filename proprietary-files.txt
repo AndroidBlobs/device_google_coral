@@ -1725,6 +1725,7 @@ vendor/lib/android.hardware.audio.common-util.so
 vendor/lib/android.hardware.audio.common@5.0-util.so
 vendor/lib/android.hardware.sensors@2.0-impl.so
 vendor/lib/btaudio_offload_if.so
+vendor/lib/ese_spi_st.so
 vendor/lib/hw/adnc_strm.primary.default.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libash.so
@@ -1796,6 +1797,7 @@ vendor/lib/libstagefright_soft_vorbisdec.so
 vendor/lib/libstagefright_soft_vpxdec.so
 vendor/lib/libstagefright_soft_vpxenc.so
 vendor/lib/libstagefright_soft_xaacdec.so
+vendor/lib/libstpreprocess.so
 vendor/lib/libstreset.so
 vendor/lib/libsysmon_cdsp_skel.so
 vendor/lib/libtunnel.so
@@ -1891,6 +1893,7 @@ vendor/lib64/libsi.so
 vendor/lib64/libsndmonitor.so
 vendor/lib64/libsns_registry_skel.so
 vendor/lib64/libspectralsensor.so
+vendor/lib64/libstpreprocess.so
 vendor/lib64/libstreset.so
 vendor/lib64/libtextclassifier_hash.so
 vendor/lib64/libtunnel.so
